@@ -1,0 +1,39 @@
+body {
+    font-size: 15px;
+    padding: 50px;
+}
+
+#content {
+    max-width: 500px;
+    width: 80%;
+    border: 1px solid rgb(231, 231, 231);
+    margin: 50px auto;
+    padding: 10%;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 4px;
+    font-size: 1.9em;
+}
+
+h4 {
+    color: #0072CE;
+    margin-bottom: 0;
+}
+
+p {
+    text-align: left;
+}
+
+
+img {
+    width: 25%;
+    display: block;
+    margin: 50px auto;
+}
+
+
