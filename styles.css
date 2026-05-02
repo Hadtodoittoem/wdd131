@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #4a4259;
+    color: #F3F1FA;
+    padding: 50px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #cb88ff;
+    transition: color 0.3s ease;
+    margin-left: 5px;
+}
+
+.nav a:hover {
+    color: #a36db8;
+}
+
+.assignment-list a {
+    color: #cb88ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 5px;
+}
+
+.assignment-list a:hover {
+    color: #a36db8;
+}
