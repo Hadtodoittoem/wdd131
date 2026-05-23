@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: gold;}
+.main-nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding-right: 20px;
+}
+.main-nav li {
+    padding: 8px;
+}
+.main-nav a {
+    color: rgb(172, 0, 0);
+    text-decoration: none;
+}
+.post {
+    padding: 1rem;
+}
+.details {
+    text-align: right;
+    padding-right: 1rem;
+}
+.book{
+    text-align: center;
+    color: rgb(172, 0, 0);
+}
+.book img {
+    display: block;
+    margin: 0 auto;
+}
+#desc {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+@media (min-width: 600px) {
+    .post {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+        max-width: 900px;
+        margin: 30px auto;
+    }
+    .details {
+        text-align: right;
+        padding-right: 30px;
+        border-right: 2px solid #ffc107;
+    }
+    .book {
+        text-align: center;
+    }
+    .book h2 {
+        text-align: left;
+    }
+    .book img {
+        display: block;
+        margin: 0 auto;
+    }
+    #desc {
+        grid-column: 2;
+        text-align: left;
+        max-width: 450px;
+        margin: 20px auto 0;
+    }
+    .main-nav {
+        padding-right: 20px;
+    }
+}
