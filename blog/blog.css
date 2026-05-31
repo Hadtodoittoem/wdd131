@@ -37,6 +37,7 @@ hr {
     color: rgb(172, 0, 0);
 }
 .book img {
+    object-fit: contain;
     display: block;
     margin: 0 auto;
 }
