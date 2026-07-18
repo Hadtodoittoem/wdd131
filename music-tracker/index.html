@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mood Tracker</title>
+    <meta name="description"
+        content="Music Mood Tracker helps you organize songs and albums based on genre, mood, and what you've listened to before.">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <img src="musicLogo.png" alt="Music Mood Tracker logo" class="logo">
+        <p class="tagline">Keep track of the songs and albums you want to hear.</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Add Music</h1>
+
+            <form id="music-form">
+
+                <div class="form-group">
+                    <label for="title">Song or Album Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="artist">Artist:</label>
+                    <input type="text" id="artist" name="artist" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genre">Genre:</label>
+                    <select id="genre" name="genre">
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Country">Country</option>
+                        <option value="Rap">Rap</option>
+                        <option value="Hip-Hop">Hip-Hop</option>
+                        <option value="Alternative">Alternative</option>
+                        <option value="Indie">Indie</option>
+                        <option value="Lo-Fi">Lo-Fi</option>
+                        <option value="Electronic">Electronic</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mood">Mood:</label>
+                    <select id="mood" name="mood">
+                        <option value="Energetic">Energetic</option>
+                        <option value="Happy">Happy</option>
+                        <option value="Relaxed">Relaxed</option>
+                        <option value="Sad">Sad</option>
+                        <option value="Focused">Focused</option>
+                        <option value="Romantic">Romantic</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Listening Status:</label>
+                    <select id="status" name="status">
+                        <option value="Not Listened">Not Listened</option>
+                        <option value="Listened">Listened</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-button">Add to List</button>
+
+            </form>
+        </section>
+
+        <section class="filter-section">
+            <h2>Filter Music</h2>
+
+            <div class="filter-buttons">
+                <button type="button" data-filter="all" class="active-filter">All</button>
+                <button type="button" data-filter="Not Listened">Not Listened</button>
+                <button type="button" data-filter="Listened">Listened</button>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>My Music List</h2>
+
+            <div id="music-list">
+                <p id="empty-message">Your music list is empty. Add something above!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bryson Larkin</p>
+    </footer>
+</body>
+
+</html>
